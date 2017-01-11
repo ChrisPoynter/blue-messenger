@@ -18,7 +18,9 @@ var dbCredentials = {
 
 //Get the port and host name from the environment variables
 var port = (process.env.VCAP_APP_PORT || 3000);
+//var port = (process.env.PORT || 3000);
 var host = (process.env.VCAP_APP_HOST || '0.0.0.0');
+//var host = (process.env.'0.0.0.0');
 
 //setup cloudant db
 function initDBConnection() {
